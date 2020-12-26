@@ -71,6 +71,17 @@ body.bgsmall {
   .container {
     max-width: 1366px;
 }
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    width: 132px;
+}
+
 @font-face {
 	font-family: "Flaticon";
 	src: url(fonts/Flaticon-d0e3e2230143d7d52ce3c414fe070b09.eot);
@@ -3132,6 +3143,9 @@ position: absolute;
 
 
  @media only screen and (max-width: 767px) {
+ 	.pl90 {
+    padding-left: 15px;
+}
  	.mainsldr {
     position: relative;
     text-align: center;
@@ -3378,7 +3392,46 @@ position: absolute;
     right: 5%;
   }
 }
+.contactform {
+	 background-color: #00e9BD;
+    border: 1px solid #00e9BD;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 460px;
+    margin: auto;
+     
+}
  @media only screen and (max-width: 767px) {
+ 	.loader {
+    top: 55% !important;
+    left: 55% !important;
+  
+}
+ 	.newsletter-form {
+    max-width: 580px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.custome .newsletter-form button {
+    position: relative;
+    right: auto;
+    top: auto;
+    background-color: #001d18;
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    margin: auto;
+}
  	.mainsldr {
     position: relative;
     text-align: center;
@@ -3415,7 +3468,16 @@ position: absolute;
 }
 
 .contactpage {
-
+    padding: 105px 15px;
+}
+.contactform {
+    background-color: #00e9BD;
+    border: 1px solid #00e9BD;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 460px;
+    margin: auto;
+    margin-bottom: 55px;
 }
 .contactpage .choose-content-area h3 {
     font-size: 54px;
@@ -3436,15 +3498,7 @@ position: absolute;
 .contactbox p {
 	font-size:16px; 
 }
-.contactform {
-	 background-color: #00e9BD;
-    border: 1px solid #00e9BD;
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 460px;
-    margin: auto;
-     
-}
+
 
 	.contactform textarea.form-control {
 		height: 150px;

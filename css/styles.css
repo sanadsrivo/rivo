@@ -29,6 +29,20 @@ div, img, p, h1, h2, h3, h4, h5, h6, span, input, a, button, textarea  {
 	outline: 0px !important;
 	border: 0px !important;
 }
+body {
+	background-color: #ffffff;
+	background-image: url(../images/bg1.jpg);
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-position: right;
+}
+body.bgsmall {
+	background-color: #ffffff;
+	background-image: url(../images/bgsmall.jpg);
+	background-size:cover;
+	background-repeat: repeat-y;
+	background-position: right;
+}
 .pt200 {
 	padding-top: 46px; 
 }
@@ -1472,7 +1486,7 @@ About Section CSS
 Services Section CSS
 =================================================*/
 .services-section {
-  background-color:rgb(0 0 0 / 0.03);
+  background-color:rgb(251 251 251);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1545,6 +1559,9 @@ Services Section CSS
   color: #37acd7;
   background: #c5ebf9;
 }
+.single-services-box .icon svg {
+    width: auto;
+}
 
 .single-services-box .icon.bg-f8fbd5 {
   color: #eddf39;
@@ -1563,9 +1580,10 @@ Services Section CSS
   background-color: #00e9BD;
 }
 
-.single-services-box:hover .icon {
+.single-services-box:hover .icon, .single-services-box:hover .icon svg path {
   background: #ffffff;
   color: #00e9BD;
+  fill: #00e9BD !important;
 }
 
 .single-services-box:hover .icon.bg-faddd4 {
@@ -2493,6 +2511,44 @@ background: linear-gradient(90deg, rgba(0,29,24,1) 0%, rgba(0,233,189,1) 100%);
     padding-left: 240px;
     position: relative;
 }
+.subscribe-content p {
+    color: #ffffff;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 240px;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+.subscribe-area.custome {
+    position: relative;
+    background: rgb(0,29,24);
+    background: linear-gradient(90deg, rgba(0,29,24,1) 0%, rgba(0,233,189,1) 100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1;
+    margin-top: 84px;
+    margin-bottom: 84px;
+}
+.custome .newsletter-form button {
+    position: absolute;
+    right: 0px;
+    top: -25px;
+    background-color: #001d18;
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+}
 .subscribimg {
 	float: left;
     width: 245px;
@@ -2968,7 +3024,7 @@ Copyright Section CSS
 
 }
 .innerpagesdubg .subscribe-area {
-   position: relative;
+    position: relative;
     background: rgb(0,29,24);
     background: linear-gradient(90deg, rgba(0,29,24,1) 0%, rgba(0,233,189,1) 100%);
     padding-top: 44px;
@@ -2976,7 +3032,7 @@ Copyright Section CSS
     line-height: 1;
     margin-top: 144px;
     margin-bottom: 144px;
-    border-radius: 280px;
+    border-radius: 12px;
     height: 236px;
 }
 .innerpagesdubg .subscribe-area h2 {
@@ -2992,17 +3048,14 @@ Copyright Section CSS
 	padding-right: 280px;
 
 }
-.innerpagesdubg .subscribe-area .btnbox{
-	position: absolute;
-	right: 60px;
-	top: 92px;
-	bottom: 90px;
+.innerpagesdubg .subscribe-area .btnbox {
+    position: relative;
+    padding-left: 266px;
 }
 .innerpagesdubg .subscribe-area .btnbox .btninfo {
     display: inline-block;
-    padding: 16px 56px;
+    padding: 12px 36px;
     color: #000000;
-    
     background-color: #ffcc4b;
     border: 1px solid #00e9BD;
     -webkit-transition: 0.5s;
@@ -3026,6 +3079,15 @@ Copyright Section CSS
     top: -15px;
     z-index: 999;
     left: -10px;
+}
+.subscribimg-right {
+    float: left;
+    width: 255px;
+    position: absolute;
+    top: -36px;
+    z-index: 999;
+    left: auto;
+    right: -37px;
 }
 
 /* About Us Images  */
